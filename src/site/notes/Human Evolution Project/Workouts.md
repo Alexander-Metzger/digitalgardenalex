@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/human-evolution-project/workouts/","title":"Workouts","tags":["training","nutrition","research"]}
+{"dg-publish":true,"permalink":"/human-evolution-project/workouts/","title":"Workouts","tags":["training","nutrition","research","gardenEntry"],"dgHomeLink":"true"}
 ---
 
 # Training Plan – Push / Legs / Pull / OK / UK
