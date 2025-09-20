@@ -111,7 +111,7 @@
 
 <div id="cosmic">
   <div id="hero-wrap">
-    <div class="banner center-text">Der_Metzger ©</div>
+    <div class="banner center-text">Der Metzger ©</div>
 
  <nav class="bubble-grid" aria-label="Primary">
   <a href="/about/Motives" class="bubble">
