@@ -113,24 +113,33 @@
   <div id="hero-wrap">
     <div class="banner center-text">Alexander Metzger ©</div>
 
-    <nav class="bubble-grid">
+ <nav class="bubble-grid" aria-label="Primary">
   <a href="/about/Motives" class="bubble">
     <div class="bubble-core">👤</div>
     <span class="label">About Me</span>
   </a>
+
   <a href="/books/recommendations" class="bubble">
     <div class="bubble-core">📚</div>
     <span class="label">Books</span>
   </a>
+
   <a href="/workouts/workouts/" class="bubble">
     <div class="bubble-core">💪</div>
     <span class="label">Workouts</span>
   </a>
-  <a href="/about/Motives" class="bubble">
-    <div class="bubble-core">👤</div>
-    <span class="label">Sports Science </span>
+
+  <a href="/philosophy/" class="bubble">
+    <div class="bubble-core">🧠</div>
+    <span class="label">Philosophy</span>
+  </a>
+
+  <a href="/sports-science/" class="bubble">
+    <div class="bubble-core">🧬</div>
+    <span class="label">Sports Science</span>
   </a>
 </nav>
+
 
 
     <div class="subtitle">
