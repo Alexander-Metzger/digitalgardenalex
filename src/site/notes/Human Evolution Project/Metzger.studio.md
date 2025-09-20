@@ -111,13 +111,22 @@
 
 <div id="cosmic">
   <div id="hero-wrap">
-    <div class="nav-chips center-text">
-      <a href="/about/">About me</a>
-      <a href="/books/">Book Recommendations</a>
-      <a href="/workouts/workouts/">Workouts</a>
-    </div>
-
     <div class="banner center-text">Alexander Metzger ©</div>
+
+    <nav class="nav-chips under-name center-text">
+      <a href="/about/Motives">
+        <img src="/images/nav/about.png" alt="About me">
+        <span>About me</span>
+      </a>
+      <a href="/books/recommendations">
+        <img src="/images/nav/books.png" alt="Book Recommendations">
+        <span>Book Recommendations</span>
+      </a>
+      <a href="/workouts/workouts/">
+        <img src="/images/nav/workouts.png" alt="Workouts">
+        <span>Workouts</span>
+      </a>
+    </nav>
 
     <div class="subtitle">
       <span class="tag">Sports Science</span>
@@ -126,11 +135,7 @@
     </div>
 
     <h2 class="section">Who I am</h2>
-    <p class="p">
-      I'm Alex, I'm just another person on this earth trying to find some kind of meaning in my personal hyperfixations. Currently these are Pharmacology, Sports Science, Linux and Math.
-      I've started publishing some of my projects and notes here, more to just leave a little digital fingerprint.
-      <br/>
-    </p>
+    <p class="p">I'm Alex …</p>
 
     <h2 class="section">What I do</h2>
     <p class="p">
@@ -138,19 +143,13 @@
       E-Mail: <a href="mailto:alexander@metzger.studio">alexander@metzger.studio</a>
     </p>
 
-    <div class="cta">
-      <a href="/manifest.pdf">Download Manifest</a>
-    </div>
+    <div class="cta"><a href="/manifest.pdf">Download Manifest</a></div>
 
     <div class="badge-row">
-      <div class="badge">GrapheneOS</div>
-      <div class="badge">Mastodon</div>
-      <div class="badge">Online Privacy</div>
-      <div class="badge">Monero</div>
-      <div class="badge">GNU/Linux</div>
-      <div class="badge">Arch</div>
-      <div class="badge">Nextcloud</div>
-      <div class="badge">Stand with Palestine</div>
+      <div class="badge">GrapheneOS</div><div class="badge">Mastodon</div>
+      <div class="badge">Online Privacy</div><div class="badge">Monero</div>
+      <div class="badge">GNU/Linux</div><div class="badge">Arch</div>
+      <div class="badge">Nextcloud</div><div class="badge">Stand with Palestine</div>
     </div>
   </div>
 </div>
