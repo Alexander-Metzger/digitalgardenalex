@@ -98,17 +98,27 @@ body {
     box-shadow: 0 0 0 1px rgba(139,92,246,.28), 0 6px 20px rgba(109,40,217,.18);
   }
 
-  /* === COSMIC BUBBLES === */
+/* === COSMIC BUBBLES – exakt 3 pro Reihe (Desktop), 2 pro Reihe (Mobile) === */
+#cosmic .bubble-grid,
+.cosmic main.content .bubble-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 Spalten fix */
+  gap: 36px;
+  justify-items: center;  /* Bubbles zentrieren */
+  align-items: start;
+  margin: 32px auto 16px;
+  max-width: 900px;       /* genug Breite für 3 Spalten */
+}
+
+/* Mobile: 2 Spalten */
+@media (max-width: 700px){
   #cosmic .bubble-grid,
-  .cosmic main.content .bubble-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px 36px;
-    justify-items: center;
-    align-items: start;
-    margin: 32px auto 16px;
-    max-width: 720px;
+  .cosmic main.content .bubble-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 560px;
   }
+}
 
   /* zweite Reihe (Items 4 & 5) mittig */
   #cosmic .bubble-grid .bubble:nth-child(4),
