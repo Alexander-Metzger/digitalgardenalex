@@ -126,11 +126,15 @@
     <div class="bubble-core">💪</div>
     <span class="label">Workouts</span>
   </a>
+  <a href="/about/Motives" class="bubble">
+    <div class="bubble-core">👤</div>
+    <span class="label">Sports Science </span>
+  </a>
 </nav>
 
 
     <div class="subtitle">
-      <span class="tag">Sports Science</span>
+
       <span class="tag">Philosophy</span>
       <span class="tag">Biohacking</span>
     </div>
