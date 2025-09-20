@@ -52,44 +52,6 @@ body {
   #cosmic a:hover,
   .cosmic main.content a:hover { color:#efeaff; text-decoration:underline; }
 
-  /* Nav-Chips */
-  #cosmic .nav-chips,
-  .cosmic main.content .nav-chips {
-    display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:24px 0 22px;
-  }
-  #cosmic .nav-chips a,
-  .cosmic main.content .nav-chips a {
-    display:inline-flex; align-items:center; gap:10px;
-    padding:8px 14px; font-weight:600;
-    border:1px solid var(--chip-bd); background:var(--chip);
-    color:var(--fg); border-radius:8px; text-decoration:none;
-    box-shadow: 0 1px 0 rgba(255,255,255,.06) inset, 0 1px 0 rgba(0,0,0,.6);
-    transition: border-color .2s, box-shadow .25s, color .2s, transform .08s, filter .2s;
-  }
-  #cosmic .nav-chips a:hover,
-  .cosmic main.content .nav-chips a:hover {
-    border-color: rgba(139,92,246,.55); color: var(--violet-ink);
-    box-shadow: 0 0 0 1px rgba(139,92,246,.25) inset, 0 8px 24px rgba(109,40,217,.25);
-    transform: translateY(-1px);
-  }
-  /* Icon im Button */
-  #cosmic .nav-chips a img,
-  .cosmic main.content .nav-chips a img {
-    width:22px; height:22px; border-radius:6px; object-fit:cover;
-    box-shadow:0 0 0 1px rgba(139,92,246,.35);
-  }
-  /* dezente Hover-Unterstreichung */
-  #cosmic .nav-chips a span,
-  .cosmic main.content .nav-chips a span { position:relative; }
-  #cosmic .nav-chips a span::after,
-  .cosmic main.content .nav-chips a span::after {
-    content:""; position:absolute; left:0; right:0; bottom:-2px; height:1px;
-    background:linear-gradient(90deg, rgba(139,92,246,0), rgba(139,92,246,.9), rgba(139,92,246,0));
-    transform:scaleX(0); transform-origin:center; transition:transform .18s ease;
-  }
-  #cosmic .nav-chips a:hover span::after,
-  .cosmic main.content .nav-chips a:hover span::after { transform:scaleX(1); }
-
   /* Banner */
   #cosmic .banner,
   .cosmic main.content .banner {
@@ -136,33 +98,58 @@ body {
     box-shadow: 0 0 0 1px rgba(139,92,246,.28), 0 6px 20px rgba(109,40,217,.18);
   }
 
-  /* Nav näher an Banner */
-  #cosmic .nav-chips.under-name,
-  .cosmic main.content .nav-chips.under-name { margin-top: 16px; }
+  /* === COSMIC BUBBLES (About me / Books / Workouts) === */
+  #cosmic .bubble-grid,
+  .cosmic main.content .bubble-grid {
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin:40px 0;
+  }
 
-  #cosmic .badge-row a.badge-link,
-.cosmic main.content .badge-row a.badge-link {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  background:#0f0f12;
-  border:1px solid var(--accent-bd);
-  border-radius:10px;
-  padding:4px;
-  box-shadow: 0 0 0 1px rgba(139,92,246,.28), 0 6px 20px rgba(109,40,217,.18);
-  transition: transform .12s ease, box-shadow .2s ease;
-}
+  #cosmic .bubble,
+  .cosmic main.content .bubble {
+    position:relative;
+    display:inline-flex;
+    flex-direction:column;
+    align-items:center;
+    text-decoration:none;
+    color:var(--fg);
+  }
 
-#cosmic .badge-row a.badge-link:hover,
-.cosmic main.content .badge-row a.badge-link:hover {
-  transform:translateY(-2px);
-  box-shadow:0 0 0 1px rgba(139,92,246,.4), 0 8px 24px rgba(109,40,217,.25);
-}
+  #cosmic .bubble .bubble-core,
+  .cosmic main.content .bubble .bubble-core {
+    width:100px; height:100px;
+    border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, var(--violet-2), var(--violet-3));
+    box-shadow:0 0 20px rgba(139,92,246,.4),
+               inset 0 0 30px rgba(255,255,255,.08);
+    display:flex; align-items:center; justify-content:center;
+    font-weight:600;
+    will-change:transform,box-shadow;
+    animation:cosmic-bounce 4.8s cubic-bezier(.25,.6,.3,1) infinite;
+  }
 
-#cosmic .badge-row a.badge-link img,
-.cosmic main.content .badge-row a.badge-link img {
-  height:34px;
-  border-radius:6px;
-  display:block;
-}
+  /* stagger bounce delays */
+  #cosmic .bubble:nth-child(2) .bubble-core{ animation-delay:.7s; }
+  #cosmic .bubble:nth-child(3) .bubble-core{ animation-delay:1.4s; }
+
+  #cosmic .bubble span.label {
+    margin-top:12px; font-size:14px; font-weight:600; color:var(--violet-1);
+  }
+
+  @keyframes cosmic-bounce {
+    0%   { transform: translateY(0) scale(1); }
+    18%  { transform: translateY(-10px) scale(1.01, .995); }
+    36%  { transform: translateY(-18px) scale(1.005, .997); }
+    50%  { transform: translateY(-22px) scale(.985, 1.02); }
+    66%  { transform: translateY(-12px) scale(1); }
+    86%  { transform: translateY(-4px)  scale(1); }
+    92%  { transform: translateY(0) scale(1.06, .94); }
+    100% { transform: translateY(0) scale(1); }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    #cosmic .bubble .bubble-core{ animation:none; }
+  }
 }
