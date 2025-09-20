@@ -134,6 +134,10 @@
     <span class="label">Philosophy</span>
   </a>
 
+  <a href="/philosophy/" class="bubble">
+    <div class="bubble-core">🧠</div>
+    <span class="label">Philosophy</span>
+  </a>
   <a href="/sports-science/" class="bubble">
     <div class="bubble-core">🏋️‍♂️</div>
     <span class="label">Sports Science</span>
