@@ -113,6 +113,7 @@
   <div id="hero-wrap">
     <div class="banner center-text">Alexander Metzger ©</div>
 
+    <!-- Nav with linked images -->
     <nav class="nav-chips under-name center-text">
       <a href="/about/Motives">
         <img src="/images/nav/about.png" alt="About me">
