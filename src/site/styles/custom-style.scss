@@ -1,6 +1,12 @@
 body {
   /* ===== COSMIC (wirkt bei cssclasses: cosmic ODER #cosmic im Note-HTML) ===== */
-
+.cosmic main.content .nav-chips a.active,
+  #cosmic .nav-chips a.active {
+    color: var(--violet-ink);
+    border-color: rgba(139,92,246,.65);
+    box-shadow: 0 0 0 1px rgba(139,92,246,.35) inset,
+                0 6px 20px rgba(109,40,217,.25);
+  }
   /* Container + Variablen */
   #cosmic,
   .cosmic main.content {
