@@ -1,12 +1,15 @@
 body {
   /* ===== COSMIC (wirkt bei cssclasses: cosmic ODER #cosmic im Note-HTML) ===== */
-.cosmic main.content .nav-chips a.active,
+
+  /* Aktiver Navbar-Link */
+  .cosmic main.content .nav-chips a.active,
   #cosmic .nav-chips a.active {
     color: var(--violet-ink);
     border-color: rgba(139,92,246,.65);
     box-shadow: 0 0 0 1px rgba(139,92,246,.35) inset,
                 0 6px 20px rgba(109,40,217,.25);
   }
+
   /* Container + Variablen */
   #cosmic,
   .cosmic main.content {
@@ -56,11 +59,12 @@ body {
   }
   #cosmic .nav-chips a,
   .cosmic main.content .nav-chips a {
-    display:inline-block; padding:6px 12px; font-weight:600;
+    display:inline-flex; align-items:center; gap:10px;
+    padding:8px 14px; font-weight:600;
     border:1px solid var(--chip-bd); background:var(--chip);
     color:var(--fg); border-radius:8px; text-decoration:none;
     box-shadow: 0 1px 0 rgba(255,255,255,.06) inset, 0 1px 0 rgba(0,0,0,.6);
-    transition: border-color .2s, box-shadow .25s, color .2s, transform .08s;
+    transition: border-color .2s, box-shadow .25s, color .2s, transform .08s, filter .2s;
   }
   #cosmic .nav-chips a:hover,
   .cosmic main.content .nav-chips a:hover {
@@ -68,6 +72,23 @@ body {
     box-shadow: 0 0 0 1px rgba(139,92,246,.25) inset, 0 8px 24px rgba(109,40,217,.25);
     transform: translateY(-1px);
   }
+  /* Icon im Button */
+  #cosmic .nav-chips a img,
+  .cosmic main.content .nav-chips a img {
+    width:22px; height:22px; border-radius:6px; object-fit:cover;
+    box-shadow:0 0 0 1px rgba(139,92,246,.35);
+  }
+  /* dezente Hover-Unterstreichung */
+  #cosmic .nav-chips a span,
+  .cosmic main.content .nav-chips a span { position:relative; }
+  #cosmic .nav-chips a span::after,
+  .cosmic main.content .nav-chips a span::after {
+    content:""; position:absolute; left:0; right:0; bottom:-2px; height:1px;
+    background:linear-gradient(90deg, rgba(139,92,246,0), rgba(139,92,246,.9), rgba(139,92,246,0));
+    transform:scaleX(0); transform-origin:center; transition:transform .18s ease;
+  }
+  #cosmic .nav-chips a:hover span::after,
+  .cosmic main.content .nav-chips a:hover span::after { transform:scaleX(1); }
 
   /* Banner */
   #cosmic .banner,
@@ -110,47 +131,12 @@ body {
   }
   #cosmic .badge, .cosmic main.content .badge {
     height:34px; min-width:120px; padding:0 10px; display:flex; align-items:center; justify-content:center;
-    background:#0f0f12; border:1px solid var(--accent-bd); border-radius:10px; color:#var(--accent);
+    background:#0f0f12; border:1px solid var(--accent-bd); border-radius:10px; color:var(--accent);
     font-weight:700; font-size:13px;
     box-shadow: 0 0 0 1px rgba(139,92,246,.28), 0 6px 20px rgba(109,40,217,.18);
   }
-/* Nav direkt unter dem Banner etwas dichter */
-#cosmic .nav-chips.under-name,
-.cosmic main.content .nav-chips.under-name { margin-top: 16px; }
 
-/* Bild + Text im Button */
-#cosmic .nav-chips a,
-.cosmic main.content .nav-chips a {
-  display:inline-flex; align-items:center; gap:10px;
-  padding:8px 14px;
-}
-  
-
-#cosmic .nav-chips a img,
-.cosmic main.content .nav-chips a img {
-  width:22px; height:22px; border-radius:6px; object-fit:cover;
-  box-shadow:0 0 0 1px rgba(139,92,246,.35);
-}
-
-/* Aktiver Link (manuell class="active" oder via JS unten) */
-#cosmic .nav-chips a.active,
-.cosmic main.content .nav-chips a.active {
-  color: var(--violet-ink);
-  border-color: rgba(139,92,246,.65);
-  box-shadow: 0 0 0 1px rgba(139,92,246,.35) inset,
-              0 6px 20px rgba(109,40,217,.25);
-}
-
-/* Kleine Hover-Unterstreichung (dezent) */
-#cosmic .nav-chips a span,
-.cosmic main.content .nav-chips a span { position:relative; }
-#cosmic .nav-chips a span::after,
-.cosmic main.content .nav-chips a span::after {
-  content:""; position:absolute; left:0; right:0; bottom:-2px; height:1px;
-  background:linear-gradient(90deg, rgba(139,92,246,0), rgba(139,92,246,.9), rgba(139,92,246,0));
-  transform:scaleX(0); transform-origin:center; transition:transform .18s ease;
-}
-#cosmic .nav-chips a:hover span::after,
-.cosmic main.content .nav-chips a:hover span::after { transform:scaleX(1); }
-
+  /* Nav näher an Banner */
+  #cosmic .nav-chips.under-name,
+  .cosmic main.content .nav-chips.under-name { margin-top: 16px; }
 }
