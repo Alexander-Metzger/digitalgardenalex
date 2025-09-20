@@ -114,7 +114,7 @@
     <div class="nav-chips center-text">
       <a href="/about/">About me</a>
       <a href="/books/">Book Recommendations</a>
-      <a href="/workouts/">Workouts</a>
+      <a href="/workouts/workouts/">Workouts</a>
     </div>
 
     <div class="banner center-text">Alexander Metzger ©</div>
