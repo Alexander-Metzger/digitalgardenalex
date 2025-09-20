@@ -113,21 +113,21 @@
   <div id="hero-wrap">
     <div class="banner center-text">Alexander Metzger ©</div>
 
-    <!-- Nav with linked images -->
-    <nav class="nav-chips under-name center-text">
-      <a href="/about/Motives">
-        <img src="/images/nav/about.png" alt="About me">
-        <span>About me</span>
-      </a>
-      <a href="/books/recommendations">
-        <img src="/images/nav/books.png" alt="Book Recommendations">
-        <span>Book Recommendations</span>
-      </a>
-      <a href="/workouts/workouts/">
-        <img src="/images/nav/workouts.png" alt="Workouts">
-        <span>Workouts</span>
-      </a>
-    </nav>
+    <nav class="bubble-grid">
+  <a href="/about/Motives" class="bubble">
+    <div class="bubble-core">👤</div>
+    <span class="label">About Me</span>
+  </a>
+  <a href="/books/recommendations" class="bubble">
+    <div class="bubble-core">📚</div>
+    <span class="label">Books</span>
+  </a>
+  <a href="/workouts/workouts/" class="bubble">
+    <div class="bubble-core">💪</div>
+    <span class="label">Workouts</span>
+  </a>
+</nav>
+
 
     <div class="subtitle">
       <span class="tag">Sports Science</span>
