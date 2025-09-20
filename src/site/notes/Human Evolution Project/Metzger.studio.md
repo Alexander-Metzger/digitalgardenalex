@@ -138,15 +138,15 @@
     <div class="bubble-core">🧬</div>
     <span class="label">Sports Science</span>
   </a>
+  <a href="/Human Evolution Project/Daily Driver Protocol.md/" class="bubble">
+    <div class="bubble-core">🧬</div>
+    <span class="label">Biohacking</span>
+  </a>
 </nav>
 
 
 
-    <div class="subtitle">
-
-      <span class="tag">Philosophy</span>
-      <span class="tag">Biohacking</span>
-    </div>
+   
 
     <h2 class="section">Who I am</h2>
     <p class="p">I'm Alex …</p>
