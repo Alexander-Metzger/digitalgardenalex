@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/human-evolution-project/metzger-studio2/","noteIcon":""}
+{"dg-publish":true,"permalink":"/human-evolution-project/metzger-studio2/","tags":["gardenEntry"],"noteIcon":""}
 ---
 
 
