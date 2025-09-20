@@ -116,31 +116,39 @@ body {
   #cosmic .bubble-grid .bubble:nth-child(5),
   .cosmic main.content .bubble-grid .bubble:nth-child(5){ grid-column: 3; }
 
-  @media (max-width: 600px){
-    #cosmic .bubble-grid,
-    .cosmic main.content .bubble-grid{
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px 20px;
-      max-width: 520px;
-    }
-    #cosmic .bubble-grid .bubble:nth-child(4),
-    .cosmic main.content .bubble-grid .bubble:nth-child(4),
-    #cosmic .bubble-grid .bubble:nth-child(5),
-    .cosmic main.content .bubble-grid .bubble:nth-child(5){
-      grid-column: auto;
-    }
-  }
 
-  #cosmic .bubble,
-  .cosmic main.content .bubble{
-    position: relative;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: var(--fg);
-    user-select: none;
+    
+/* === COSMIC BUBBLES – vereinfachtes Flex-Layout (zentriert, responsiv) === */
+#cosmic .bubble-grid,
+.cosmic main.content .bubble-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;         /* zentriert auch unvollständige Reihen */
+  gap: 36px;
+  margin: 32px auto 16px;
+  max-width: 720px;
+}
+
+/* Breite der einzelnen Bubbles -> ergibt 3 oben bei ~720px */
+#cosmic .bubble,
+.cosmic main.content .bubble {
+  flex: 0 1 200px;                 /* ~3 pro Zeile bei 720px */
+}
+
+/* Mobile: 2 pro Zeile, kleinere Abstände */
+@media (max-width: 600px) {
+  #cosmic .bubble-grid,
+  .cosmic main.content .bubble-grid {
+    gap: 20px;
+    max-width: 520px;
   }
+  #cosmic .bubble,
+  .cosmic main.content .bubble {
+    flex: 0 1 44%;                 /* ~2 pro Zeile */
+  }
+}
+
+ 
 
   #cosmic .bubble .bubble-core,
   .cosmic main.content .bubble .bubble-core{
