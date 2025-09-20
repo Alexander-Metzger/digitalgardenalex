@@ -146,11 +146,32 @@
 
     <div class="cta"><a href="/manifest.pdf">Download Manifest</a></div>
 
-    <div class="badge-row">
-      <div class="badge">GrapheneOS</div><div class="badge">Mastodon</div>
-      <div class="badge">Online Privacy</div><div class="badge">Monero</div>
-      <div class="badge">GNU/Linux</div><div class="badge">Arch</div>
-      <div class="badge">Nextcloud</div><div class="badge">Stand with Palestine</div>
-    </div>
+<div class="badge-row">
+  <a href="https://grapheneos.org" class="badge-link">
+    <img src="/img/grapheneos.gif" alt="GrapheneOS">
+  </a>
+  <a href="https://joinmastodon.org" class="badge-link">
+    <img src="/img/fediverse.gif" alt="Mastodon / Fediverse">
+  </a>
+  <a href="/privacy" class="badge-link">
+    <img src="/img/chrome-is-evil.gif" alt="Online Privacy">
+  </a>
+  <a href="https://www.getmonero.org/" class="badge-link">
+    <img src="/img/google_stand.gif" alt="Monero">
+  </a>
+  <a href="https://www.gnu.org/gnu/linux-and-gnu.html" class="badge-link">
+    <img src="/img/gnu-linux.gif" alt="GNU/Linux">
+  </a>
+  <a href="https://getfedora.org/" class="badge-link">
+    <img src="/img/fedora.gif" alt="Fedora / Arch Linux">
+  </a>
+  <a href="https://nextcloud.com" class="badge-link">
+    <img src="/img/nextcloud.gif" alt="Nextcloud">
+  </a>
+  <a href="https://en.wikipedia.org/wiki/Palestine" class="badge-link">
+    <img src="/img/agplv3.gif" alt="Stand with Palestine">
+  </a>
+</div>
+
   </div>
 </div>
