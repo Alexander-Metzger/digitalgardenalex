@@ -98,138 +98,102 @@ body {
     box-shadow: 0 0 0 1px rgba(139,92,246,.28), 0 6px 20px rgba(109,40,217,.18);
   }
 
-  
-
-/* === COSMIC BUBBLES (About/Books/Workouts/…): gentle wavering + 3/2 layout === */
-#cosmic .bubble-grid,
-.cosmic main.content .bubble-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px 36px;
-  justify-items: center;
-  align-items: start;
-  margin: 32px auto 16px;
-  max-width: 720px;
-}
-
-/* zweite Reihe (Items 4 & 5) mittig anordnen */
-#cosmic .bubble-grid .bubble:nth-child(4),
-.cosmic main.content .bubble-grid .bubble:nth-child(4){ grid-column: 2; }
-#cosmic .bubble-grid .bubble:nth-child(5),
-.cosmic main.content .bubble-grid .bubble:nth-child(5){ grid-column: 3; }
-
-/* Responsive: unter 600px → 2 Spalten; manuelles Spalten-Placement aufheben */
-@media (max-width: 600px){
+  /* === COSMIC BUBBLES === */
   #cosmic .bubble-grid,
-  .cosmic main.content .bubble-grid{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px 20px;
-    max-width: 520px;
+  .cosmic main.content .bubble-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 36px;
+    justify-items: center;
+    align-items: start;
+    margin: 32px auto 16px;
+    max-width: 720px;
   }
+
+  /* zweite Reihe (Items 4 & 5) mittig */
   #cosmic .bubble-grid .bubble:nth-child(4),
-  .cosmic main.content .bubble-grid .bubble:nth-child(4),
+  .cosmic main.content .bubble-grid .bubble:nth-child(4){ grid-column: 2; }
   #cosmic .bubble-grid .bubble:nth-child(5),
-  .cosmic main.content .bubble-grid .bubble:nth-child(5){
-    grid-column: auto;
+  .cosmic main.content .bubble-grid .bubble:nth-child(5){ grid-column: 3; }
+
+  @media (max-width: 600px){
+    #cosmic .bubble-grid,
+    .cosmic main.content .bubble-grid{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px 20px;
+      max-width: 520px;
+    }
+    #cosmic .bubble-grid .bubble:nth-child(4),
+    .cosmic main.content .bubble-grid .bubble:nth-child(4),
+    #cosmic .bubble-grid .bubble:nth-child(5),
+    .cosmic main.content .bubble-grid .bubble:nth-child(5){
+      grid-column: auto;
+    }
   }
-}
 
-#cosmic .bubble,
-.cosmic main.content .bubble{
-  position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: var(--fg);
-  user-select: none;
-}
+  #cosmic .bubble,
+  .cosmic main.content .bubble{
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--fg);
+    user-select: none;
+  }
 
-#cosmic .bubble .bubble-core,
-.cosmic main.content .bubble .bubble-core{
-  width: 110px; height: 110px; border-radius: 999px;
-  display: grid; place-items: center;
-  background:
-    radial-gradient(120px 120px at 30% 30%, rgba(167,139,250,.22), transparent 60%),
-    radial-gradient(140px 140px at 70% 40%, rgba(109,40,217,.18), transparent 60%),
-    linear-gradient(180deg, #16161a 0%, #101015 100%);
-  box-shadow:
-    0 0 0 1px rgba(139,92,246,.40),
-    0 10px 26px rgba(109,40,217,.28),
-    inset 0 0 70px rgba(139,92,246,.14);
-  outline: 1px solid rgba(139,92,246,.22);
-  will-change: transform, box-shadow, filter;
-  animation: bubble-waver 6.2s ease-in-out infinite;
-}
-
-/* leichte Phasenverschiebung, damit nichts synchron ist */
-#cosmic .bubble:nth-child(2) .bubble-core,
-.cosmic main.content .bubble:nth-child(2) .bubble-core{ animation-delay: .6s; }
-#cosmic .bubble:nth-child(3) .bubble-core,
-.cosmic main.content .bubble:nth-child(3) .bubble-core{ animation-delay: 1.2s; }
-#cosmic .bubble:nth-child(4) .bubble-core,
-.cosmic main.content .bubble:nth-child(4) .bubble-core{ animation-delay: 1.8s; }
-#cosmic .bubble:nth-child(5) .bubble-core,
-.cosmic main.content .bubble:nth-child(5) .bubble-core{ animation-delay: 2.4s; }
-
-#cosmic .bubble .label,
-.cosmic main.content .bubble .label{
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: .2px;
-  color: var(--violet-1);
-  text-shadow: 0 1px 0 rgba(0,0,0,.35);
-}
-
-/* sanfter Hover-Lift ohne harte Sprünge */
-#cosmic .bubble:hover .bubble-core,
-.cosmic main.content .bubble:hover .bubble-core{
-  transform: translateY(-3px) scale(1.02);
-  box-shadow:
-    0 0 0 1px rgba(139,92,246,.55),
-    0 14px 32px rgba(109,40,217,.36),
-    inset 0 0 88px rgba(139,92,246,.18);
-  filter: brightness(1.03);
-}
-
-/* subtiler Bodenschatten, der mitwippt */
-#cosmic .bubble::after,
-.cosmic main.content .bubble::after{
-  content:"";
-  position:absolute; left:50%; bottom:-8px; transform:translateX(-50%) scaleX(.88) scaleY(.60);
-  width: 72px; height: 18px; border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(0,0,0,.32), rgba(0,0,0,0));
-  filter: blur(6px); opacity:.42; pointer-events:none;
-  animation: shadow-waver 6.2s ease-in-out infinite;
-}
-#cosmic .bubble:nth-child(2)::after{ animation-delay: .6s; }
-#cosmic .bubble:nth-child(3)::after{ animation-delay: 1.2s; }
-#cosmic .bubble:nth-child(4)::after{ animation-delay: 1.8s; }
-#cosmic .bubble:nth-child(5)::after{ animation-delay: 2.4s; }
-
-/* Keyframes: sehr sanftes Schaukeln */
-@keyframes bubble-waver{
-  0%,100% { transform: translateY(0)    scale(1); }
-  25%     { transform: translateY(-3px) scale(1.008); }
-  50%     { transform: translateY(2px)  scale(0.996); }
-  75%     { transform: translateY(-2px) scale(1.004); }
-}
-@keyframes shadow-waver{
-  0%,100% { transform: translateX(-50%) scaleX(.88) scaleY(.60); opacity:.42; }
-  50%     { transform: translateX(-50%) scaleX(.78) scaleY(.50); opacity:.28; }
-}
-
-/* Bewegungs-Reduktion respektieren */
-@media (prefers-reduced-motion: reduce){
   #cosmic .bubble .bubble-core,
-  .cosmic main.content .bubble .bubble-core,
-  #cosmic .bubble::after,
-  .cosmic main.content .bubble::after{
-    animation: none;
-    transition: none;
+  .cosmic main.content .bubble .bubble-core{
+    width: 110px; height: 110px; border-radius: 999px;
+    display: grid; place-items: center;
+    background:
+      radial-gradient(120px 120px at 30% 30%, rgba(167,139,250,.22), transparent 60%),
+      radial-gradient(140px 140px at 70% 40%, rgba(109,40,217,.18), transparent 60%),
+      linear-gradient(180deg, #16161a 0%, #101015 100%);
+    box-shadow:
+      0 0 0 1px rgba(139,92,246,.40),
+      0 10px 26px rgba(109,40,217,.28),
+      inset 0 0 70px rgba(139,92,246,.14);
+    outline: 1px solid rgba(139,92,246,.22);
+    will-change: transform, box-shadow, filter;
+    animation: bubble-waver 6.2s ease-in-out infinite;
+    transition: transform .28s ease, box-shadow .28s ease, filter .28s ease;
   }
-}
 
+  /* Hover Effekt: leicht größer */
+  #cosmic .bubble:hover .bubble-core,
+  .cosmic main.content .bubble:hover .bubble-core{
+    transform: translateY(-3px) scale(1.08);
+    box-shadow:
+      0 0 0 1px rgba(139,92,246,.65),
+      0 16px 34px rgba(109,40,217,.40),
+      inset 0 0 95px rgba(139,92,246,.22);
+    filter: brightness(1.06);
+  }
+
+  #cosmic .bubble .label,
+  .cosmic main.content .bubble .label{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    color: var(--violet-1);
+    text-shadow: 0 1px 0 rgba(0,0,0,.35);
+  }
+
+  /* Keyframes */
+  @keyframes bubble-waver{
+    0%,100% { transform: translateY(0) scale(1); }
+    25%     { transform: translateY(-3px) scale(1.008); }
+    50%     { transform: translateY(2px) scale(0.996); }
+    75%     { transform: translateY(-2px) scale(1.004); }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    #cosmic .bubble .bubble-core,
+    .cosmic main.content .bubble .bubble-core{
+      animation: none;
+      transition: none;
+    }
   }
 }
