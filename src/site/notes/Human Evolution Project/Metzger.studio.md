@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/","permalink":"/","title":"Alexander Metzger","tags":["gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/human-evolution-project/metzger-studio/","tags":["gardenEntry"],"noteIcon":""}
 ---
 
 
