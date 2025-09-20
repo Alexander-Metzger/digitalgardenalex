@@ -111,7 +111,7 @@
 
 <div id="cosmic">
   <div id="hero-wrap">
-    <div class="banner center-text">Alexander Metzger ©</div>
+    <div class="banner center-text">Der_Metzger ©</div>
 
  <nav class="bubble-grid" aria-label="Primary">
   <a href="/about/Motives" class="bubble">
@@ -150,12 +150,14 @@
    
 
     <h2 class="section">Who I am</h2>
-    <p class="p">> I’m just another person on this earth trying to pass the time between birth and death somehow by doing silly stuff I care about. But until a stroke or a car I didn’t see coming gets me, I’ll try to learn a few things about the world. What I already learned is that an unexamined life is not worth living, and to get a few more examiners, I created this page.</p>
+    <p class="p"> I’m just another person on this earth trying to pass the time between birth and death somehow by doing silly stuff I care about. But until a stroke or a car I didn’t see coming gets me, I’ll try to learn a few things about the world. What I already learned is that an unexamined life is not worth living, and to get a few more examiners, I created this page.</p>
 
     <h2 class="section">What is to be done?</h2>
     <p class="p">
       Projects I’m currently working on:  
-An Elite Triathlon Training Plan based on clinical data and evidence, a module-based protocol aiming for physical performance without sacrificing health, and filling out all these empty links one day.<br/>
+	An Elite Triathlon Training Plan based on clinical data and evidence
+	A module-based protocol aiming for physical performance without sacrificing health
+ Filling out all these empty links one day.<br/>
       
       E-Mail: <a href="mailto:butcherscontact.poach867@slmail.me">butcherscontact.poach867@slmail.me</a>
     </p>
