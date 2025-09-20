@@ -135,9 +135,10 @@
   </a>
 
   <a href="/sports-science/" class="bubble">
-    <div class="bubble-core">🧬</div>
+    <div class="bubble-core">🏋️‍♂️</div>
     <span class="label">Sports Science</span>
   </a>
+  
   <a href="/Human Evolution Project/Daily Driver Protocol.md/" class="bubble">
     <div class="bubble-core">🧬</div>
     <span class="label">Biohacking</span>
