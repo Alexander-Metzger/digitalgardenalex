@@ -1,0 +1,18 @@
+---
+{"dg-publish":true,"permalink":"/human-evolution-project/injury-stack/","dgHomeLink":"true","noteIcon":""}
+---
+
+| Compound            | Dosage    | Timing            | Pathway Tags                                                                                                                                                                                                                                                                            | Mechanism                                                         | Outcome                                |
+| ------------------- | --------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | -------------------------------------- |
+| **BPC-157**         | 2×300 mcg | Morning + Evening | [Angiogenesis](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#angiogenesis) [ECM–Remodeling](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#ecm-remodeling)           | ↑ VEGF, fibroblast activity, ECM remodeling                       | Tendon/ligament repair ↑, Healing ↑    |
+| **Thymosin Beta 4** | 500 mcg   | Evening           | [Cell Migration](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#cell-migration) [Angiogenesis](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#angiogenesis)           | Actin binding → ↑ cell migration, angiogenesis, ↓ fibrosis        | Healing speed ↑, Fibrosis ↓            |
+| **MK-677**          | 12.5 mg   | Before sleep      | [GH–IGF1 Axis](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#gh-igf1-axis) [ECM–Remodeling](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#ecm-remodeling)           | Ghrelin-R agonist → ↑ GH/IGF-1 → ↑ collagen synthesis, remodeling | Recovery ↑, Connective tissue repair ↑ |
+| **HMB**             | 3×1 g     | With meals        | [p70S6K–mTOR](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#p70s6k-mtor) [Ubiquitin–Proteasome](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#ubiquitin-proteasome) | Leucine metabolite, ↓ protein breakdown                           | Muscle preservation ↑, Breakdown ↓     |
+
+---
+> [!warning] Full Disclaimer  
+> The material presented here is strictly a matter of **theoretical scientific inquiry**.  
+> It is written for **educational purposes** only, to analyze mechanisms, pathways, and research findings.  
+> Any mention of substances (including SARMs, peptides, or other experimental agents) is made in the spirit of **scientific discussion**, not in the context of real-world usage.  
+> This site does not provide medical advice, treatment recommendations, or instructions for application.  
+> All content should be understood as part of a **conceptual, academic-style exploration**.  
