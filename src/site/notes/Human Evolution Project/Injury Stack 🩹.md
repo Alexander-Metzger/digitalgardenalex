@@ -2,6 +2,14 @@
 {"dg-publish":true,"permalink":"/human-evolution-project/injury-stack/","dgHomeLink":"true","noteIcon":""}
 ---
 
+>[!warning] Disclaimer  
+> This protocol is presented as a **theoretical, scientific exploration** only.  
+> It is not medical advice, nor a recommendation for use.  
+> Many of the compounds listed (e.g., SARMs, peptides, PPAR agonists) are **experimental** and not approved for human consumption.  
+> The information is intended purely for **educational and research purposes**, to discuss biochemical pathways and potential mechanisms.  
+> Always consult a qualified healthcare professional before considering any interventions.  
+Between 6-12 Weeks
+
 | Compound            | Dosage    | Timing            | Pathway Tags                                                                                                                                                                                                                                                                            | Mechanism                                                         | Outcome                                |
 | ------------------- | --------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | -------------------------------------- |
 | **BPC-157**         | 2×300 mcg | Morning + Evening | [Angiogenesis](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#angiogenesis) [ECM–Remodeling](https://chatgpt.com/g/g-p-68cbecbc86348191a9661f6e4e9cf0f7-human-evolution-project/c/Pathway%20Glossary#ecm-remodeling)           | ↑ VEGF, fibroblast activity, ECM remodeling                       | Tendon/ligament repair ↑, Healing ↑    |
