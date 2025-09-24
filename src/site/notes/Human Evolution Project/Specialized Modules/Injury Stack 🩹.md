@@ -9,7 +9,7 @@
 > The information is intended purely for **educational and research purposes**, to discuss biochemical pathways and potential mechanisms.  
 > Always consult a qualified healthcare professional before considering any interventions.  
 
-Most useful when ran 6-10 Weeks. BPC-157 can be adjusted based on severity of injury. For mild nagging joint injuries anywhere from 250mcg to 350mcg administered twice a day will have the best per-mg response.
+
 
 | Compound             | Dosage    | Timing             | Pathway Tags                                                                                                                    | Mechanism                                                         | Outcome                                  |
 | -------------------- | --------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------- |
